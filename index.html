@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wordlist 1 — Education | B1+ Vocabulary Quiz</title>
+<style>
+/* ============================================================
+   INK & HIGHLIGHTER  —  B1+ Vocabulary List 1 (Fall) "Education"
+   ============================================================ */
+:root{
+  --ink:#332B1E;
+  --ink-2:#5A4C34;
+  --paper:#F8F4E9;
+  --card:#FFFFFF;
+  --slate:#7A6B53;
+  --rule:#E3DAC6;
+  --hl-1:#E8B52E;
+  --hl-2:#A8C98A;
+  --hl-3:#F0A3A0;
+  --hl-4:#F2C98A;
+  --hl-5:#C8B6E0;
+  --hl-6:#9FC6DE;
+  --hl-7:#D9D96B;
+  --good:#3F7A3A;
+  --good-bg:#EDF4EA;
+  --bad:#B33A2B;
+  --bad-bg:#FAEDEA;
+  --display: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  --read: Georgia,"Times New Roman",serif;
+  --mono: "Courier New",ui-monospace,monospace;
+  --ar: "Segoe UI","Tahoma","Geeza Pro","Arabic Typesetting",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--display);
+  font-size:16px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+button{font-family:inherit;cursor:pointer}
+input{font-family:inherit}
+
+/* ---------- shell ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
+
+/* ---------- masthead ---------- */
+header.mast{
+  border-bottom:2px solid var(--ink);
+  padding:26px 0 16px;
+  margin-bottom:26px;
+  display:flex;flex-wrap:wrap;align-items:flex-end;gap:18px;
+}
+.mast h1{
+  font-size:clamp(28px,4.6vw,44px);
+  font-weight:800;letter-spacing:-.035em;line-height:1;
+  margin:0;text-transform:lowercase;
+}
+.mast .sub{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--slate);margin:8px 0 0;
+}
+.mast .spacer{flex:1}
+.chip{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;border:1.5px solid var(--ink);
+  padding:5px 10px;white-space:nowrap;
+}
+
+/* ---------- highlighter swipe (signature) ---------- */
+.hl{position:relative;z-index:0;font-weight:700;padding:0 .05em}
+.hl::before{
+  content:"";position:absolute;left:-.18em;right:-.18em;top:.12em;bottom:.02em;
+  background:var(--swipe,var(--hl-1));
+  transform:skewX(-9deg) rotate(-.7deg);
+  z-index:-1;border-radius:2px 6px 3px 5px;
+  animation:swipe .5s cubic-bezier(.2,.8,.3,1) both;
+}
+@keyframes swipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+
+/* ---------- start screen ---------- */
+.start{max-width:760px}
+.lede{font-family:var(--read);font-size:19px;line-height:1.65;color:var(--ink-2);margin:0 0 28px}
+.namefield{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 30px}
+.namefield input{
+  border:none;border-bottom:2px solid var(--ink);background:transparent;
+  font-size:19px;padding:6px 4px;min-width:240px;color:var(--ink);
+}
+.namefield input:focus{outline:none;border-bottom-color:var(--good);background:#FBF3D8}
+.namefield label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+
+.plan{border-top:1px solid var(--rule);margin:0 0 30px}
+.plan-row{
+  display:flex;gap:14px;align-items:baseline;
+  padding:11px 0;border-bottom:1px solid var(--rule);
+}
+.plan-tag{
+  width:30px;height:16px;flex:none;border-radius:2px 5px 3px 4px;
+  transform:skewX(-9deg);margin-top:3px;
+}
+.plan-name{font-weight:700;font-size:15px;flex:1;min-width:150px}
+.plan-desc{font-family:var(--read);font-size:14px;color:var(--slate);flex:2.2;min-width:180px}
+.plan-n{font-family:var(--mono);font-size:12px;color:var(--slate);white-space:nowrap}
+
+.btn{
+  border:2px solid var(--ink);background:var(--ink);color:#fff;
+  font-weight:700;font-size:15px;padding:12px 24px;border-radius:0;
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--hl-1)}
+.btn:active{transform:translate(0,0);box-shadow:none}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{box-shadow:4px 4px 0 var(--hl-2)}
+.btn.sm{font-size:13px;padding:8px 14px}
+.btn:disabled{opacity:.35;cursor:not-allowed;transform:none;box-shadow:none}
+.btnrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* ---------- quiz layout ---------- */
+.layout{display:grid;grid-template-columns:1fr 232px;gap:34px;align-items:start}
+
+/* ---------- question card ---------- */
+.card{
+  background:var(--card);border:2px solid var(--ink);
+  padding:26px 28px 24px;position:relative;
+}
+.card::after{
+  content:"";position:absolute;inset:6px -6px -6px 6px;
+  border:2px solid var(--ink);z-index:-1;opacity:.16;
+}
+.qhead{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding-bottom:12px;margin-bottom:18px;border-bottom:1px solid var(--rule);
+}
+.qnum{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.06em}
+.sectag{
+  font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  padding:4px 9px;border-radius:2px 6px 3px 5px;font-weight:700;color:var(--ink);
+}
+.qhead .spacer{flex:1}
+.instr{
+  font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--slate);
+}
+.prompt{font-size:17px;font-weight:600;margin:0 0 16px;line-height:1.5}
+.prompt b{font-weight:800;border-bottom:2px solid var(--hl-1);padding-bottom:1px}
+.sentence{
+  font-family:var(--read);font-size:19px;line-height:1.7;
+  border-left:4px solid var(--hl-1);padding:2px 0 2px 16px;margin:0 0 20px;
+}
+.passage{
+  font-family:var(--read);font-size:16px;line-height:1.75;background:#F3EEDF;
+  border:1px solid var(--rule);padding:16px 18px;margin:0 0 20px;
+}
+.passage h4{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--slate);margin:0 0 8px;font-weight:700;
+}
+
+/* ---------- options ---------- */
+.opts{display:flex;flex-direction:column;gap:9px;margin:0}
+.opt{
+  display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;
+  border:1.5px solid var(--rule);background:#fff;padding:12px 14px;
+  font-size:15.5px;color:var(--ink);line-height:1.45;transition:border-color .12s,background .12s;
+}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt .key{
+  font-family:var(--mono);font-weight:700;font-size:13px;flex:none;
+  width:22px;height:22px;border:1.5px solid var(--ink);
+  display:grid;place-items:center;margin-top:1px;
+}
+.opt.sel{border-color:var(--ink);background:#FDF8E6}
+.opt.right{border-color:var(--good);background:var(--good-bg)}
+.opt.right .key{background:var(--good);border-color:var(--good);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt.wrong .key{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt:disabled{cursor:default}
+.opts.tfng{flex-direction:row;flex-wrap:wrap}
+.opts.tfng .opt{flex:1;min-width:150px}
+
+/* ---------- typed answer ---------- */
+.gapwrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 0}
+.gap{
+  border:none;border-bottom:2.5px solid var(--ink);background:#FDF8E6;
+  font-size:20px;font-family:var(--read);padding:7px 12px;min-width:200px;color:var(--ink);
+}
+.gap:focus{outline:none;border-bottom-color:var(--good);background:#F9EFC9}
+.gap.right{border-bottom-color:var(--good);background:var(--good-bg)}
+.gap.wrong{border-bottom-color:var(--bad);background:var(--bad-bg)}
+.gap:disabled{opacity:1}
+
+/* ---------- listening ---------- */
+.audiobox{
+  border:1.5px dashed var(--ink);padding:16px 18px;margin:0 0 18px;
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;background:#F4F7EC;
+}
+.playbtn{
+  border:2px solid var(--ink);background:var(--hl-6);color:var(--ink);
+  font-weight:700;font-size:14px;padding:10px 18px;display:flex;gap:9px;align-items:center;
+}
+.playbtn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.playbtn.playing{background:var(--ink);color:#fff}
+.speedbtn{
+  border:1.5px solid var(--ink);background:transparent;font-family:var(--mono);
+  font-size:12px;padding:8px 11px;letter-spacing:.05em;
+}
+.speedbtn.on{background:var(--ink);color:#fff}
+.audionote{font-family:var(--mono);font-size:11px;color:var(--slate);letter-spacing:.05em}
+.transcript{
+  font-family:var(--read);font-size:16px;background:#F3EEDF;border-left:4px solid var(--hl-6);
+  padding:10px 14px;margin:12px 0 0;
+}
+.notes{
+  border:1px solid var(--rule);border-top:3px solid var(--hl-6);
+  padding:14px 16px;margin:0 0 16px;background:#fff;
+}
+.notes h4{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  margin:0 0 8px;color:var(--slate);font-weight:700;
+}
+.notes p{font-family:var(--read);font-size:17px;margin:0;line-height:1.7}
+
+/* ---------- word bank ---------- */
+.bank{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.bankword{
+  font-family:var(--read);font-size:15px;border:1.5px solid var(--ink);
+  padding:6px 12px;background:#fff;
+}
+.bankword.used{opacity:.3;text-decoration:line-through}
+
+/* ---------- feedback ---------- */
+.fb{border-left:5px solid var(--good);background:var(--good-bg);padding:15px 17px;margin:18px 0 0}
+.fb.no{border-left-color:var(--bad);background:var(--bad-bg)}
+.fb-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 9px}
+.fb-verdict{font-weight:800;font-size:15px;letter-spacing:-.01em}
+.fb-pts{font-family:var(--mono);font-size:12px;color:var(--slate)}
+.fb p{margin:0 0 8px;font-size:15px;line-height:1.55}
+.fb p:last-child{margin-bottom:0}
+.wordcard{
+  background:#fff;border:1px solid var(--rule);padding:12px 14px;margin:10px 0 0;
+}
+.wordcard .w{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.wordcard .pos{font-family:var(--mono);font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.1em;margin-left:8px}
+.wordcard .ar{font-family:var(--ar);font-size:19px;direction:rtl;unicode-bidi:embed;display:block;margin:5px 0 6px;color:var(--ink-2)}
+.wordcard .def{font-family:var(--read);font-size:15px;color:var(--ink-2);margin:0 0 6px}
+.wordcard .ex{font-family:var(--read);font-size:14.5px;color:var(--slate);font-style:italic;margin:0}
+
+/* ---------- nav ---------- */
+.nav{display:flex;gap:12px;align-items:center;margin:22px 0 0;flex-wrap:wrap}
+.nav .spacer{flex:1}
+
+/* ---------- rail ---------- */
+.rail{position:sticky;top:20px}
+.rail-block{border:2px solid var(--ink);background:#fff;padding:14px;margin:0 0 14px}
+.rail-block h3{
+  font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
+  margin:0 0 11px;color:var(--slate);font-weight:700;
+}
+.score-big{font-size:36px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.score-big span{font-size:16px;color:var(--slate);font-weight:600}
+.stat{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;padding:4px 0;border-bottom:1px dotted var(--rule)}
+.stat:last-child{border-bottom:none}
+.stat b{font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.cell{
+  aspect-ratio:1;border:1px solid var(--rule);background:#fff;
+  font-family:var(--mono);font-size:11px;color:var(--slate);
+  display:grid;place-items:center;padding:0;
+}
+.cell:hover{border-color:var(--ink)}
+.cell.now{outline:2px solid var(--ink);outline-offset:-2px;font-weight:700;color:var(--ink)}
+.cell.ok{background:var(--good);border-color:var(--good);color:#fff}
+.cell.no{background:var(--bad);border-color:var(--bad);color:#fff}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{
+  font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;
+  border:1.5px solid var(--ink);padding:4px 7px;background:var(--hl-1);font-weight:700;
+  animation:pop .4s cubic-bezier(.2,1.4,.4,1) both;
+}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+.rail-empty{font-family:var(--mono);font-size:11px;color:var(--slate)}
+
+/* ---------- results ---------- */
+.results{max-width:860px}
+.bigscore{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;border-bottom:2px solid var(--ink);padding:0 0 22px;margin:0 0 26px}
+.bigscore .n{font-size:clamp(56px,11vw,96px);font-weight:800;letter-spacing:-.05em;line-height:.9}
+.bigscore .n small{font-size:.32em;color:var(--slate);letter-spacing:-.02em}
+.bigscore .meta{font-family:var(--mono);font-size:12px;color:var(--slate);letter-spacing:.06em;line-height:1.9}
+.readiness{border:2px solid var(--ink);padding:14px 18px;background:var(--hl-1)}
+.readiness .lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.readiness .val{font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1.15}
+.readiness .cap{font-family:var(--mono);font-size:10px;color:var(--ink-2);margin-top:4px}
+h2.sec{font-size:22px;font-weight:800;letter-spacing:-.03em;margin:34px 0 14px;text-transform:lowercase}
+.bar-row{display:flex;align-items:center;gap:12px;margin:0 0 9px}
+.bar-name{width:190px;flex:none;font-size:14px;font-weight:600}
+.bar-track{flex:1;height:20px;background:#E9E2CF;border:1px solid var(--rule);position:relative}
+.bar-fill{display:block;height:100%;transition:width .8s cubic-bezier(.2,.8,.3,1)}
+.bar-num{font-family:var(--mono);font-size:12px;width:52px;text-align:right;flex:none}
+.revise{display:flex;flex-wrap:wrap;gap:8px}
+.revise .rw{
+  font-family:var(--read);font-size:16px;border:1.5px solid var(--ink);padding:7px 13px;background:#fff;
+}
+.revise .rw .ar{font-family:var(--ar);direction:rtl;color:var(--slate);font-size:15px;margin-left:8px}
+
+/* ---------- certificate ---------- */
+.cert{
+  border:3px double var(--ink);padding:38px 34px;text-align:center;background:#fff;margin:16px 0 0;
+  background-image:radial-gradient(circle at 12% 18%,var(--hl-1) 0 1.5px,transparent 1.6px),
+                   radial-gradient(circle at 88% 82%,var(--hl-2) 0 1.5px,transparent 1.6px);
+  background-size:26px 26px;
+}
+.cert .k{font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--slate)}
+.cert .who{font-family:var(--read);font-size:clamp(26px,5vw,38px);margin:14px 0 6px;font-weight:400}
+.cert .what{font-family:var(--read);font-size:16px;color:var(--ink-2);max-width:460px;margin:0 auto 18px}
+.cert .sc{font-size:44px;font-weight:800;letter-spacing:-.04em}
+.cert .sig{margin-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--slate)}
+
+/* ---------- review list ---------- */
+.rev-item{border-left:4px solid var(--bad);background:#fff;border-top:1px solid var(--rule);border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:13px 16px;margin:0 0 10px}
+.rev-q{font-family:var(--mono);font-size:11px;color:var(--slate);letter-spacing:.08em;margin:0 0 5px}
+.rev-p{font-size:15px;margin:0 0 7px;font-family:var(--read)}
+.rev-a{font-size:14px;margin:0}
+.rev-a b{color:var(--good)}
+.rev-a s{color:var(--bad)}
+
+/* ---------- footer ---------- */
+footer{
+  border-top:2px solid var(--ink);margin-top:56px;padding:16px 0;
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);
+}
+footer .spacer{flex:1}
+
+/* ---------- confetti ---------- */
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:99}
+
+/* ---------- toast ---------- */
+#toast{
+  visibility:hidden;
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(140%);
+  background:var(--ink);color:#fff;padding:12px 20px;font-size:14px;font-weight:600;
+  z-index:120;transition:transform .3s cubic-bezier(.2,.9,.3,1);max-width:88vw;
+}
+#toast.show{visibility:visible;transform:translateX(-50%) translateY(0)}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr;gap:22px}
+  .rail{position:static;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+  .rail-block{margin:0}
+  .rail-block.gridblock{grid-column:1/-1}
+  .grid{grid-template-columns:repeat(10,1fr)}
+  .card::after{display:none}
+}
+@media (max-width:560px){
+  .wrap{padding:0 14px 60px}
+  .card{padding:18px 16px}
+  .bar-name{width:100%}
+  .bar-row{flex-wrap:wrap}
+  .rail{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+@media print{
+  .noprint,#toast,#confetti{display:none!important}
+  body{background:#fff}
+  .cert{border-color:#000}
+}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <h1>wordlist <span class="hl" style="--swipe:var(--hl-1)">one</span></h1>
+      <p class="sub">B1+ Vocabulary · Fall · "Education" · 40 words · 50 questions</p>
+    </div>
+    <div class="spacer"></div>
+    <div class="chip">Target: IELTS Band 6</div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>
+    <span>B1+ Vocabulary List 1 (Fall) — Education</span>
+    <span class="spacer"></span>
+    <span>Designed by: Nazila Motahari</span>
+  </footer>
+</div>
+<canvas id="confetti"></canvas>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="loadfile" accept=".json" style="display:none">
+<script>
+/* =========================================================================
+   B1+ Vocabulary List 1 (Fall) — "Education"
+   50-question IELTS-style quiz engine
+   ========================================================================= */
+
+/* ---------------- Word data (from the wordlist) ---------------- */
+const W = {
+  absolutely:{pos:"adverb",ar:"تماماً / بالتأكيد",def:"Completely",ex:"I absolutely agree that you need to work harder."},
+  ambition:{pos:"noun",ar:"طموح",def:"Something that you want to do in your life",ex:"My ambition is to become a doctor after I graduate."},
+  application:{pos:"noun",ar:"طلب رسمي",def:"An official request for something, usually in writing",ex:"I've sent applications to four different universities."},
+  attempt:{pos:"verb",ar:"يحاول",def:"To try to do something",ex:"Check the examples first, and then attempt the exercises on the page."},
+  attitude:{pos:"noun",ar:"موقف / سلوك",def:"How you think or feel about something",ex:"He has a very bad attitude towards work."},
+  bell:{pos:"noun",ar:"جرس",def:"An electrical object that makes a ringing sound when you press a switch",ex:"The exam will finish when you hear the bell."},
+  ceremony:{pos:"noun",ar:"حفل رسمي",def:"A formal event performed on an important social or religious occasion",ex:"Students must attend the graduation ceremony at the University."},
+  count:{pos:"verb",ar:"يَعُدّ",def:"To see how many people or things there are",ex:"Did you count the number of students in class today?"},
+  despite:{pos:"preposition",ar:"على الرغم من",def:"Although something happened or is true",ex:"I'm happy with the course despite failing one of the tests."},
+  essay:{pos:"noun",ar:"مقال",def:"A short piece of writing about a subject, especially one written by a student",ex:"For homework I want you to write an essay on education in the UAE."},
+  explanation:{pos:"noun",ar:"شرح / تفسير",def:"The details or reasons someone gives to make something clear",ex:"Could you give me a quick explanation of how to solve this math problem?"},
+  fairly:{pos:"adverb",ar:"إلى حد ما",def:"More than average, but less than very",ex:"You did fairly well in the test, but you could have done better."},
+  fee:{pos:"noun",ar:"رسوم",def:"An amount of money that you pay to do or use something",ex:"The students are not happy about the increase in their fees."},
+  lecture:{pos:"noun",ar:"محاضرة",def:"A talk to a group of people about a subject",ex:"We went to a lecture on Emirati culture."},
+  mention:{pos:"verb",ar:"يذكر",def:"To speak or write a few words about something or someone",ex:"He mentioned that he liked reading horror stories."},
+  obvious:{pos:"adjective",ar:"واضح",def:"Easy to understand or see",ex:"You may think the answer is obvious, but I don't."},
+  obviously:{pos:"adverb",ar:"من الواضح",def:"In a way that is easy to understand or see",ex:"She's obviously intelligent, but she doesn't make a lot of effort."},
+  partly:{pos:"adverb",ar:"جزئياً",def:"To some degree but not completely",ex:"She was partly successful. She passed the coursework, but failed the final exam."},
+  perfectly:{pos:"adverb",ar:"بشكل تام / مثالي",def:"In a perfect way",ex:"There's no need to shout, I can hear perfectly well."},
+  proper:{pos:"adjective",ar:"مناسب / صحيح",def:"Correct or suitable; real and satisfactory",ex:"You have to ensure your child receives a proper education."},
+  properly:{pos:"adverb",ar:"بشكل صحيح",def:"Correctly, or in a satisfactory way",ex:"If she doesn't behave properly, she will have to leave the classroom."},
+  punish:{pos:"verb",ar:"يعاقب",def:"To make someone suffer because they have done something bad",ex:"Students must be punished for cheating in exams."},
+  qualification:{pos:"noun",ar:"مؤهل علمي",def:"An exam you have passed or a course of study you have completed",ex:"Please tell us about your educational qualifications and work experience."},
+  qualified:{pos:"adjective",ar:"مؤهَّل",def:"Having passed exams or courses",ex:"He is a newly qualified teacher."},
+  regarding:{pos:"preposition",ar:"بخصوص",def:"About or relating to",ex:"I will speak to her later today regarding her behaviour in class."},
+  register:{pos:"verb",ar:"يسجّل",def:"To put information about someone or something on an official list",ex:"Students need to register for the course by the end of the first week."},
+  review:{pos:"noun",ar:"تقييم / مراجعة",def:"A piece of writing that gives an opinion about a new book, movie, etc.",ex:"The school has got excellent reviews online."},
+  revise:{pos:"verb",ar:"يراجع الدروس",def:"To study a subject again before you take a test",ex:"Make sure you revise this week's vocabulary before the quiz tomorrow."},
+  revision:{pos:"noun",ar:"مراجعة الدروس",def:"The work of studying a subject again before taking a test",ex:"She did no revision, but she still got a very high mark."},
+  rule:{pos:"noun",ar:"قاعدة / نظام",def:"An official statement about what you must or must not do",ex:"You can't smoke at college. It's against the rules."},
+  satisfied:{pos:"adjective",ar:"راضٍ",def:"Pleased because you have got what you wanted",ex:"Her teachers were satisfied with her progress."},
+  secondary:{pos:"adjective",ar:"ثانوي",def:"Relating to the education of students aged between 11 and 18",ex:"She has just started at secondary school."},
+  session:{pos:"noun",ar:"جلسة / حصة",def:"A period during which you do one activity",ex:"We're having a training session on MS Forms this afternoon."},
+  smart:{pos:"adjective",ar:"ذكي / أنيق",def:"Intelligent; or looking clean and tidy",ex:"Mona is very smart. Her grades are always excellent."},
+  strict:{pos:"adjective",ar:"صارم",def:"Making sure that people behave well and do not break rules",ex:"My teacher is very strict. We are not allowed to talk in class."},
+  stuff:{pos:"noun",ar:"أشياء / أغراض",def:"A substance or group of things, without saying exactly what they are",ex:"You are not allowed to leave your stuff in the classroom after the class."},
+  suited:{pos:"adjective",ar:"مناسب لـ",def:"Right for someone or something",ex:"She was never suited for college. She had no interest in her studies."},
+  surprising:{pos:"adjective",ar:"مُفاجئ",def:"Not expected, and making someone feel surprised",ex:"The exam results were surprising — everyone passed!"},
+  temporary:{pos:"adjective",ar:"مؤقت",def:"Existing or happening for only a short time",ex:"They had a temporary teacher when their main teacher was sick for a week."},
+  totally:{pos:"adverb",ar:"تماماً",def:"Completely",ex:"She had totally different scores for the two tests — 23% and 95%."}
+};
+
+/* ---------------- Sections ---------------- */
+const SECTIONS = [
+  {id:1,name:"Meaning in context",  hl:"var(--hl-1)", instr:"Choose the correct meaning",              desc:"Work out what the word means from the sentence around it."},
+  {id:2,name:"Sentence completion", hl:"var(--hl-2)", instr:"ONE WORD — change the form if needed", desc:"Type the missing word. Spelling and word form both count."},
+  {id:3,name:"Word forms",          hl:"var(--hl-3)", instr:"Choose the correct form",                 desc:"Noun, verb, adjective or adverb — pick the form that fits."},
+  {id:4,name:"Paraphrase match",    hl:"var(--hl-4)", instr:"Choose the closest word",                 desc:"IELTS rewrites ideas. Spot the word with the same meaning."},
+  {id:5,name:"True / False / Not Given", hl:"var(--hl-5)", instr:"Choose TRUE, FALSE or NOT GIVEN",    desc:"Read the passage and decide what it really says."},
+  {id:6,name:"Listening: note completion", hl:"var(--hl-6)", instr:"Listen, then write ONE WORD only", desc:"Hear the announcement and complete the notes."},
+  {id:7,name:"Summary completion",  hl:"var(--hl-7)", instr:"Choose the word from the box",            desc:"Fill the gaps in a summary using the word bank."}
+];
+
+/* ---------------- Reading passage (Section 5) ---------------- */
+const PASSAGE = `Al Noor College holds a graduation ceremony every June. Students must register online before the first week of term, and all fees must be paid before the first lecture of the year. The college is quite strict about attendance: students who miss more than three sessions without a proper reason are punished. Despite these rules, most students say they are satisfied with the college, and its reviews online are excellent. Obviously, students who revise regularly get better results, although revision alone does not guarantee a high mark.`;
+
+/* ---------------- Summary + bank (Section 7) ---------------- */
+const BANK = ["ambition","attempt","attitude","ceremony","explanation","register","revise","stuff","suited","temporary"];
+const SUMMARY = [
+  {t:"University life is not always easy. Many students have a clear "},
+  {gap:45},
+  {t:" — to become an engineer, for example — but they do not always know how to reach it. Some choose the wrong course because they are simply not "},
+  {gap:46},
+  {t:" to it. Others do not "},
+  {gap:47},
+  {t:" their notes often enough before a test. A successful student has a positive "},
+  {gap:48},
+  {t:", asks the teacher for an "},
+  {gap:49},
+  {t:" when something is unclear, and does not "},
+  {gap:50},
+  {t:" to write a whole essay in one night."}
+];
+
+/* ---------------- The 50 questions ---------------- */
+const Q = [
+/* ===== SECTION 1 — Meaning in context (1–10) ===== */
+{s:1,w:"proper",sent:"You have to ensure your child receives a ~proper~ education.",prompt:"What does <b>proper</b> mean here?",
+ opts:["Correct and suitable for a purpose","Provided without any payment","Lasting only for a short period","Taking place in the student's home"],a:0,
+ why:"<b>Proper</b> = correct or suitable. It also means <i>real and satisfactory</i>, as in <i>eat some proper food instead of just sweets</i>. The adverb form is <i>properly</i>."},
+{s:1,w:"despite",sent:"I'm happy with the course ~despite~ failing one of the tests.",prompt:"What does <b>despite</b> mean here?",
+ opts:["Because of something that is true","Although something is true","In addition to something else","Only if something remains true"],a:1,
+ why:"<b>Despite</b> introduces a contrast — something happened <i>and yet</i> the result was different from what you expect. It is the opposite of <i>because of</i>."},
+{s:1,w:"partly",sent:"She was ~partly~ successful. She passed the coursework, but failed the final exam.",prompt:"What does <b>partly</b> mean here?",
+ opts:["Completely and in every way","Not in any way at all","To some degree, but not completely","More than anyone had expected"],a:2,
+ why:"<b>Partly</b> sits in the middle: some success, but not full success. Compare it with <i>totally</i> and <i>absolutely</i>, which mean 100%."},
+{s:1,w:"smart",sent:"Mona is very ~smart~. Her grades are always excellent.",prompt:"What does <b>smart</b> mean here?",
+ opts:["Hard-working and always on time","Popular with other students","Clean and tidy in appearance","Intelligent and quick to learn"],a:3,
+ why:"<b>Smart</b> has two meanings on your list: <i>intelligent</i>, and <i>clean and tidy</i> (as in <i>students look smart in uniform</i>). The sentence about grades tells you which one is meant."},
+{s:1,w:"stuff",sent:"You are not allowed to leave your ~stuff~ in the classroom after the class.",prompt:"What does <b>stuff</b> mean here?",
+ opts:["Things, without saying exactly what they are","Homework that has been marked by a teacher","Furniture belonging to the college itself","Rubbish that should have been thrown away"],a:0,
+ why:"<b>Stuff</b> is informal and vague — bags, books, pens, anything. Because it is informal, avoid it in IELTS Writing; recognise it in Listening."},
+{s:1,w:"temporary",sent:"They had a ~temporary~ teacher when their main teacher was sick for a week.",prompt:"What does <b>temporary</b> mean here?",
+ opts:["Not properly trained or qualified","Lasting for only a short time","Extremely strict with students","Permanent and long-lasting"],a:1,
+ why:"<b>Temporary</b> is about <i>time</i>, not quality. The opposite is <i>permanent</i>. A temporary teacher can still be fully qualified."},
+{s:1,w:"suited",sent:"She was never ~suited~ for college. She had no interest in her studies.",prompt:"What does <b>suited</b> mean here?",
+ opts:["Fully prepared and ready to start","Wearing formal clothes for an event","Right for someone or something","Officially invited to attend"],a:2,
+ why:"<b>Suited to / suited for</b> means <i>a good match</i>. Do not confuse it with <i>a suit</i> (clothing) — the second sentence gives you the clue."},
+{s:1,w:"fairly",sent:"You did ~fairly~ well in the test, but you could have done better.",prompt:"What does <b>fairly</b> mean here?",
+ opts:["Treating everyone in an equal way","Extremely, to the highest degree","Not at all, in any way","More than average, but not very"],a:3,
+ why:"<b>Fairly</b> weakens the adjective. <i>Fairly good</i> is less than <i>very good</i> — and the words <i>but you could have done better</i> confirm it."},
+{s:1,w:"strict",sent:"My teacher is very ~strict~. We are not allowed to talk in class.",prompt:"What does <b>strict</b> mean here?",
+ opts:["Makes sure people follow the rules","Friendly and relaxed with students","Frequently absent from class","Very intelligent and well educated"],a:0,
+ why:"<b>Strict</b> is about enforcing rules. The second sentence — <i>not allowed to talk</i> — is the evidence."},
+{s:1,w:"satisfied",sent:"Her teachers were ~satisfied~ with her progress.",prompt:"What does <b>satisfied</b> mean here?",
+ opts:["Worried about what might happen next","Pleased with what has happened","Surprised by an unexpected result","Confused and unsure what to think"],a:1,
+ why:"<b>Satisfied</b> = pleased, but calmly so. It is weaker than <i>delighted</i> and stronger than <i>acceptable</i>."},
+
+/* ===== SECTION 2 — Sentence completion (11–18) ===== */
+{s:2,w:"application",gap:true,sent:"I've sent ______ to four different universities.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"applications",accept:["applications"],
+ why:"An <b>application</b> is an official written request. The plural is needed here because of <i>four different universities</i>."},
+{s:2,w:"explanation",gap:true,sent:"Could you give me a quick ______ of how to solve this math problem?",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"explanation",accept:["explanation"],
+ why:"<b>Explanation</b> is the noun; <i>explain</i> is the verb. After <i>a quick</i> you need a noun."},
+{s:2,w:"register",gap:true,sent:"Students need to ______ for the course by the end of the first week.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"register",accept:["register"],
+ why:"After <i>need to</i> you need the base verb. <b>Register for</b> a course = put your name on the official list."},
+{s:2,w:"revise",gap:true,sent:"Make sure you ______ this week's vocabulary before the quiz tomorrow.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"revise",accept:["revise"],
+ why:"<b>Revise</b> (verb) = study again before a test. The noun is <i>revision</i> — a very common IELTS word-form trap."},
+{s:2,w:"ambition",gap:true,sent:"My ______ is to become a doctor after I graduate.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"ambition",accept:["ambition"],
+ why:"<b>Ambition</b> = something you want to achieve in your life. After <i>My</i> you need a noun."},
+{s:2,w:"fee",gap:true,sent:"The students are not happy about the increase in their ______.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"fees",accept:["fees"],
+ why:"<b>Fees</b> = money you pay to study. Note the plural after <i>their</i> — in IELTS Listening, a missing <i>s</i> loses the mark."},
+{s:2,w:"lecture",gap:true,sent:"We went to a ______ on Emirati culture given by a visiting professor.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"lecture",accept:["lecture"],
+ why:"A <b>lecture</b> is a formal talk to a large group. A <i>session</i> is any period of one activity, so <i>lecture</i> is more precise here."},
+{s:2,w:"punish",gap:true,sent:"Students must be ______ for cheating in exams.",prompt:"Complete the sentence with ONE WORD. You may need to change the form of the word.",
+ a:"punished",accept:["punished"],
+ why:"<i>Must be</i> + past participle = passive. The base verb <i>punish</i> alone is grammatically wrong here."},
+
+/* ===== SECTION 3 — Word forms (19–24) ===== */
+{s:3,w:"obviously",sent:"He had not studied at all, so the answer was ______ wrong.",prompt:"Choose the correct form of <b>obvious</b>.",
+ opts:["obviate","obvious","obviously","obviousness"],a:2,
+ why:"An adverb is needed to modify the adjective <i>wrong</i>. Adjective: <i>obvious</i>. Adverb: <b>obviously</b>."},
+{s:3,w:"qualification",sent:"Please tell us about your educational ______ and work experience.",prompt:"Choose the correct form.",
+ opts:["qualifying","qualify","qualified","qualifications"],a:3,
+ why:"After <i>your educational</i> you need a noun. <b>Qualifications</b> = the exams and courses you have completed."},
+{s:3,w:"revision",sent:"She did no ______ at all, but she still got a very high mark.",prompt:"Choose the correct form of <b>revise</b>.",
+ opts:["revision","revise","revised","revising"],a:0,
+ why:"<i>Do</i> + noun. <b>Revision</b> is the noun form; <i>revise</i> is the verb. <i>Do revision</i> is a fixed collocation."},
+{s:3,w:"properly",sent:"If she doesn't behave ______, she will have to leave the classroom.",prompt:"Choose the correct form of <b>proper</b>.",
+ opts:["proper","properly","property","propose"],a:1,
+ why:"An adverb is needed after the verb <i>behave</i>. <i>Property</i> is a different word entirely — it means things you own."},
+{s:3,w:"surprising",sent:"The exam results were ______ — nobody expected everyone to pass.",prompt:"Choose the correct form.",
+ opts:["surprise","surprised","surprising","surprisingly"],a:2,
+ why:"<b>-ing</b> describes the thing that causes the feeling (the results). <b>-ed</b> describes the person who feels it (<i>the students were surprised</i>)."},
+{s:3,w:"qualified",sent:"He is a newly ______ teacher, so this is his first year in a school.",prompt:"Choose the correct form.",
+ opts:["qualification","qualifying","qualify","qualified"],a:3,
+ why:"An adjective is needed before the noun <i>teacher</i>. <b>Qualified</b> = having passed the necessary exams."},
+
+/* ===== SECTION 4 — Paraphrase match (25–30) ===== */
+{s:4,w:"totally",sent:"The examiner said the student's answer was ~completely~ wrong.",prompt:"Which word from the list is closest in meaning to <b>completely</b>?",
+ opts:["totally","properly","fairly","partly"],a:0,
+ why:"<b>Totally</b> = completely, 100%. <i>Fairly</i> and <i>partly</i> both mean less than 100%, so they cannot be a match."},
+{s:4,w:"regarding",sent:"I am writing to you ~about~ your son's behaviour in class.",prompt:"Which word from the list is closest in meaning to <b>about</b>?",
+ opts:["despite","regarding","including","following"],a:1,
+ why:"<b>Regarding</b> is the formal version of <i>about</i>. IELTS Reading often swaps an everyday word for a formal one like this."},
+{s:4,w:"attempt",sent:"The college ~tried~ to contact you three times last week.",prompt:"Which word from the list is closest in meaning to <b>tried</b>?",
+ opts:["counted","registered","attempted","mentioned"],a:2,
+ why:"<b>Attempt</b> is the formal synonym of <i>try</i>. It is very common in academic writing and in IELTS instructions."},
+{s:4,w:"mention",sent:"In the meeting, she ~said a few words about~ the new deadline.",prompt:"Which word from the list is closest in meaning to the underlined phrase?",
+ opts:["lectured","reviewed","explained","mentioned"],a:3,
+ why:"<b>Mention</b> = refer to something briefly. <i>Explain</i> means to give full details, which is much stronger."},
+{s:4,w:"secondary",sent:"My sister studies at a ~school for students aged between 11 and 18~ in Al Ain.",prompt:"Which word from the list matches the underlined phrase?",
+ opts:["secondary","qualified","proper","temporary"],a:0,
+ why:"<b>Secondary</b> school comes after primary school and before university. IELTS very often replaces a whole definition like this with a single word."},
+{s:4,w:"obvious",sent:"It is ~easy to see~ that she works harder than anyone else in the class.",prompt:"Which word from the list is closest in meaning to the underlined phrase?",
+ opts:["proper","obvious","secondary","temporary"],a:1,
+ why:"<b>Obvious</b> literally means <i>easy to see or understand</i>. Recognising this kind of rewrite is exactly what Band 6 reading needs."},
+
+/* ===== SECTION 5 — TFNG (31–36) ===== */
+{s:5,w:"fee",tfng:true,prompt:"Students must pay their fees before their first lecture.",a:0,
+ why:"The passage says <i>all fees must be paid before the first lecture of the year</i>. The statement says the same thing in different words, so it is TRUE."},
+{s:5,w:"strict",tfng:true,prompt:"The college does not have strict rules about attendance.",a:1,
+ why:"The passage says the college <i>is quite strict about attendance</i>. The statement says the opposite, so it is FALSE."},
+{s:5,w:"register",tfng:true,prompt:"Students register for the college using the internet.",a:0,
+ why:"<i>Register online</i> is rewritten as <i>using the internet</i> — same meaning, so TRUE. Watch for these paraphrases."},
+{s:5,w:"ceremony",tfng:true,prompt:"The graduation ceremony takes place in the college's main hall.",a:2,
+ why:"The passage says there is a ceremony every June, but it never says <i>where</i>. No information = NOT GIVEN, not FALSE."},
+{s:5,w:"review",tfng:true,prompt:"The college's online reviews were written by former students.",a:2,
+ why:"The passage says the college's online <i>reviews</i> are excellent, but it never says who wrote them. No information at all means NOT GIVEN — not FALSE."},
+{s:5,w:"revision",tfng:true,prompt:"Students who revise regularly are certain to get a high mark.",a:1,
+ why:"The passage says <i>revision alone does not guarantee a high mark</i>. <i>Certain to</i> is too strong, so FALSE. Extreme words are a classic FALSE signal."},
+
+/* ===== SECTION 6 — Listening (37–44) ===== */
+{s:6,w:"session",listen:true,audio:"Good morning everyone. Before we begin, please note that the training session on Thursday afternoon has been cancelled.",
+ notes:"Training ______ on Thursday — CANCELLED",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"session",accept:["session"],
+ why:"A <b>session</b> is a period during which you do one activity. Note how the speaker says it quickly, between <i>training</i> and <i>on Thursday</i>."},
+{s:6,w:"ceremony",listen:true,audio:"All graduating students should arrive for the ceremony at four o'clock, and please wear formal dress.",
+ notes:"Arrive for the ______ at 4:00 · formal dress",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"ceremony",accept:["ceremony"],
+ why:"<b>Ceremony</b> — listen for the stress on the first syllable: <i>SER-uh-mo-nee</i>. Spelling is often the difficult part."},
+{s:6,w:"perfectly",listen:true,audio:"There is really no need to shout. I can hear you perfectly well from the back of the room.",
+ notes:"Speaker can hear ______ well from the back",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"perfectly",accept:["perfectly"],
+ why:"<b>Perfectly well</b> is a common collocation meaning <i>completely fine</i>. The adverb form is needed, not <i>perfect</i>."},
+{s:6,w:"essay",listen:true,audio:"Remember to email me your essay on Emirati education before midnight on Thursday.",
+ notes:"Email the ______ before midnight, Thursday",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"essay",accept:["essay"],
+ why:"An <b>essay</b> is a short piece of writing about a subject, usually written by a student. Watch the double <i>s</i> — a spelling error loses the mark."},
+{s:6,w:"count",listen:true,audio:"Before you leave the exam room, please count the number of answer sheets on your desk.",
+ notes:"______ the answer sheets before leaving",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"count",accept:["count"],
+ why:"<b>Count</b> = see how many things there are. It also means to say numbers in order (<i>count to twenty</i>). After <i>please</i> you need the base verb."},
+{s:6,w:"rule",listen:true,audio:"It is against the rules to use your mobile phone at any time during the examination.",
+ notes:"Against the ______ to use a phone in the exam",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"rules",accept:["rules"],
+ why:"<i>Against the <b>rules</b></i> is always plural in this phrase. Plurals are one of the most common causes of lost marks."},
+{s:6,w:"absolutely",listen:true,audio:"I absolutely agree that you need to work harder this term if you want to pass.",
+ notes:"Teacher ______ agrees — must work harder",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"absolutely",accept:["absolutely"],
+ why:"<b>Absolutely</b> = completely, 100%. It is much stronger than <i>fairly</i> or <i>partly</i>. Listen for the stress: <i>AB-so-lute-ly</i>."},
+{s:6,w:"bell",listen:true,audio:"The bell will ring at the end of the exam. When you hear it, stop writing immediately.",
+ notes:"Stop writing when the ______ rings",prompt:"Listen and complete the note with ONE WORD only.",
+ a:"bell",accept:["bell"],
+ why:"<b>Bell</b> — a short word, so it passes quickly. Predicting the word type before listening (here, a noun) makes it much easier to catch."},
+
+/* ===== SECTION 7 — Summary completion (45–50) ===== */
+{s:7,w:"ambition",bank:true,gapno:45,prompt:"Choose the correct word for gap 45.",a:"ambition",
+ why:"<b>Ambition</b> = something you want to achieve in life. The dash example — <i>to become an engineer</i> — tells you it is a goal."},
+{s:7,w:"suited",bank:true,gapno:46,prompt:"Choose the correct word for gap 46.",a:"suited",
+ why:"<b>Suited to</b> = right for. The preposition <i>to</i> after the gap is the grammar clue."},
+{s:7,w:"revise",bank:true,gapno:47,prompt:"Choose the correct word for gap 47.",a:"revise",
+ why:"After <i>do not</i> you need a base verb, and <i>notes … before a test</i> points to <b>revise</b>."},
+{s:7,w:"attitude",bank:true,gapno:48,prompt:"Choose the correct word for gap 48.",a:"attitude",
+ why:"<b>Positive attitude</b> is a strong collocation — the adjective <i>positive</i> before the gap gives it away."},
+{s:7,w:"explanation",bank:true,gapno:49,prompt:"Choose the correct word for gap 49.",a:"explanation",
+ why:"<i>Asks the teacher for an ___ when something is unclear</i>. The article <i>an</i> also tells you the word starts with a vowel sound."},
+{s:7,w:"attempt",bank:true,gapno:50,prompt:"Choose the correct word for gap 50.",a:"attempt",
+ why:"<b>Attempt to</b> + verb = try to. It is the only word in the box that fits both the meaning and the grammar."}
+];
+
+const TFNG_OPTS = ["TRUE","FALSE","NOT GIVEN"];
+
+/* ---------------- Badges ---------------- */
+const BADGES = [
+  {id:"first",   label:"First Mark",     test:s=>s.correct>=1},
+  {id:"ten",     label:"Word Collector", test:s=>s.correct>=10},
+  {id:"streak5", label:"Streak ×5",      test:s=>s.bestStreak>=5},
+  {id:"streak10",label:"On Fire ×10",    test:s=>s.bestStreak>=10},
+  {id:"speller", label:"Sharp Speller",  test:s=>secCorrect(s,2)>=7},
+  {id:"ear",     label:"Sharp Ear",      test:s=>secCorrect(s,6)>=7},
+  {id:"para",    label:"Paraphrase Pro", test:s=>secCorrect(s,4)>=5},
+  {id:"tfng",    label:"Not Given Ninja",test:s=>secCorrect(s,5)>=5},
+  {id:"forms",   label:"Form Master",    test:s=>secCorrect(s,3)>=5},
+  {id:"half",    label:"Halfway Hero",   test:s=>s.answered>=25},
+  {id:"finish",  label:"Finisher",       test:s=>s.answered>=50}
+];
+
+
+const LOCKED_SECTIONS = [7];
+
+/* ---------------- Randomise on every load ----------------
+   Both the question order (within each section) and the answer
+   options change each time the app opens, so neither sequence nor
+   position can be learned or shared between students. The order a
+   student actually saw is stored in state, so a saved file reloads
+   exactly as they left it instead of being scrambled.            */
+Q.forEach((q,k)=>{ q.id=k; if(q.opts){ q._opts0=q.opts.slice(); q._a0=q.a; } });
+const Q0 = Q.slice();
+function groupKey(q){ return q.s + (q.diagram ? "/"+q.diagram : ""); }
+function shuffleQuestions(qorder){
+  if(!qorder){
+    const groups=[], seen={};
+    Q0.forEach(q=>{ const k=groupKey(q);
+      if(!(k in seen)){ seen[k]=groups.length; groups.push([]); }
+      groups[seen[k]].push(q); });
+    qorder=[];
+    groups.forEach(g=>{
+      const ids=g.map(q=>q.id);
+      if(!LOCKED_SECTIONS.includes(g[0].s)){
+        for(let j=ids.length-1;j>0;j--){ const r=Math.floor(Math.random()*(j+1)); [ids[j],ids[r]]=[ids[r],ids[j]]; }
+      }
+      qorder=qorder.concat(ids);
+    });
+  }
+  const byId={}; Q0.forEach(q=>byId[q.id]=q);
+  Q.length=0; qorder.forEach(id=>Q.push(byId[id]));
+  return qorder;
+}
+function shuffleOptions(order){
+  order = order || {};
+  Q.forEach(q=>{
+    if(!q._opts0 || q._opts0.length<2) return;
+    let perm = order[q.id];
+    if(!perm){
+      perm = q._opts0.map((_,k)=>k);
+      for(let j=perm.length-1;j>0;j--){ const r=Math.floor(Math.random()*(j+1)); [perm[j],perm[r]]=[perm[r],perm[j]]; }
+      order[q.id]=perm;
+    }
+    q.opts = perm.map(k=>q._opts0[k]);
+    q.a = perm.indexOf(q._a0);
+  });
+  return order;
+}
+
+/* ---------------- State ---------------- */
+let S = null;
+function newState(name){
+  const st={name:name||"Student", i:0, res:{}, given:{}, points:0, streak:0, bestStreak:0,
+          correct:0, answered:0, badges:[], started:Date.now(), finished:false, rate:1};
+  st.qorder=shuffleQuestions(null);
+  st.order=shuffleOptions(null);
+  return st;
+}
+function secCorrect(s,sec){
+  let n=0; Q.forEach((q,i)=>{ if(q.s===sec && s.res[i]===true) n++; }); return n;
+}
+function secTotal(sec){ return Q.filter(q=>q.s===sec).length; }
+function sec(id){ return SECTIONS.find(x=>x.id===id); }
+
+/* ---------------- Helpers ---------------- */
+const el = id => document.getElementById(id);
+const esc = t => String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function mark(sent,color){
+  // ~word~ becomes a highlighter swipe
+  return sent.replace(/~([^~]+)~/g,(m,p1)=>`<span class="hl" style="--swipe:${color}">${p1}</span>`);
+}
+function norm(t){
+  return String(t||"").toLowerCase().trim()
+    .replace(/[.,!?;:'"()]/g,"").replace(/\s+/g," ").trim();
+}
+function toast(msg){
+  const t=el("toast"); t.textContent=msg; t.classList.add("show");
+  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),2600);
+}
+
+/* ---------------- Start screen ---------------- */
+function renderStart(){
+  el("app").innerHTML = `
+  <div class="start">
+    <p class="lede">Forty words from your <b>Education</b> wordlist, tested the way IELTS tests them:
+    meaning in context, paraphrase, word forms, True/False/Not Given, note completion from audio, and
+    summary gaps. Fifty questions in seven sections — you can stop and come back later.</p>
+
+    <div class="namefield">
+      <label for="who">Your name</label>
+      <input id="who" placeholder="Type your name" autocomplete="off" maxlength="40">
+    </div>
+
+    <div class="plan">
+      ${SECTIONS.map(s=>`
+      <div class="plan-row">
+        <span class="plan-tag" style="background:${s.hl}"></span>
+        <span class="plan-name">${s.name}</span>
+        <span class="plan-desc">${s.desc}</span>
+        <span class="plan-n">${secTotal(s.id)} Q</span>
+      </div>`).join("")}
+    </div>
+
+    <div class="btnrow">
+      <button class="btn" id="go">Start the quiz</button>
+      <button class="btn ghost sm" id="loadbtn">Load saved progress</button>
+    </div>
+    <p class="audionote" style="margin-top:18px">Section 6 plays audio through your browser. Turn your sound on, or use headphones.</p>
+  </div>`;
+
+  el("go").onclick = ()=>{ S = newState(el("who").value.trim()); render(); };
+  el("loadbtn").onclick = ()=> el("loadfile").click();
+}
+
+/* ---------------- Question rendering ---------------- */
+function render(){
+  if(S.finished) return renderResults();
+  const i=S.i, q=Q[i], sc=sec(q.s), done = S.res[i]!==undefined;
+
+  let body="";
+
+  /* --- stimulus --- */
+  if(q.s===5){
+    body += `<div class="passage"><h4>Reading passage — Al Noor College</h4>${PASSAGE}</div>`;
+  }
+  if(q.s===7){
+    body += `<div class="passage"><h4>Summary — student success</h4>${summaryHTML()}</div>
+             <div class="bank">${BANK.map(b=>`<span class="bankword${bankUsed(b,i)?" used":""}">${b}</span>`).join("")}</div>`;
+  }
+  if(q.listen){
+    body += `<div class="audiobox">
+      <button class="playbtn" id="play"><span>▶</span> Play audio</button>
+      <button class="speedbtn${S.rate===1?" on":""}" data-rate="1">1.0×</button>
+      <button class="speedbtn${S.rate===0.75?" on":""}" data-rate="0.75">0.75×</button>
+      <span class="audionote">You may listen as many times as you need.</span>
+    </div>
+    <div class="notes"><h4>Complete the notes</h4><p>${q.notes.replace("______",done?`<span class="hl" style="--swipe:${sc.hl}">${q.a}</span>`:"<b>______</b>")}</p></div>`;
+  }
+  if(q.sent){
+    body += `<p class="sentence" style="border-left-color:${sc.hl}">${mark(q.sent,sc.hl)}</p>`;
+  }
+
+  body += `<p class="prompt">${q.prompt}</p>`;
+
+  /* --- answer area --- */
+  if(q.tfng){
+    body += `<div class="opts tfng">${TFNG_OPTS.map((o,k)=>optBtn(o,k,i,q,done)).join("")}</div>`;
+  } else if(q.bank){
+    body += `<div class="opts">${bankOptions(q).map((o,k)=>optBtn(o,k,i,q,done,true)).join("")}</div>`;
+  } else if(q.opts){
+    body += `<div class="opts">${q.opts.map((o,k)=>optBtn(o,k,i,q,done)).join("")}</div>`;
+  } else {
+    const g = S.given[i]||"";
+    body += `<div class="gapwrap">
+      <input class="gap ${done?(S.res[i]?"right":"wrong"):""}" id="gapin" value="${esc(g)}"
+        placeholder="one word" autocomplete="off" autocapitalize="off" spellcheck="false" ${done?"disabled":""}>
+      ${done?"":'<button class="btn sm" id="check">Check answer</button>'}
+    </div>`;
+  }
+
+  /* --- feedback --- */
+  if(done) body += feedbackHTML(i,q);
+
+  el("app").innerHTML = `
+  <div class="layout">
+    <div>
+      <div class="card">
+        <div class="qhead">
+          <span class="qnum">Q${i+1} / 50</span>
+          <span class="sectag" style="background:${sc.hl}">${sc.name}</span>
+          <span class="spacer"></span>
+          <span class="instr">${sc.instr}</span>
+        </div>
+        ${body}
+      </div>
+      <div class="nav noprint">
+        <button class="btn ghost sm" id="prev" ${i===0?"disabled":""}>← Back</button>
+        <button class="btn sm" id="next">${i===49?"Finish and see results":"Next →"}</button>
+        <span class="spacer"></span>
+        <button class="btn ghost sm" id="save">Save progress</button>
+        <button class="btn ghost sm" id="quit">Finish now</button>
+      </div>
+    </div>
+    ${railHTML()}
+  </div>`;
+
+  wire(i,q,done);
+}
+
+function optBtn(text,k,i,q,done,isBank){
+  const keys="ABCD EFG".split("");
+  let cls="opt";
+  const chosen = S.given[i];
+  const correctKey = isBank ? q.a : q.a;
+  if(done){
+    const isCorrect = isBank ? (text===q.a) : (k===q.a);
+    if(isCorrect) cls+=" right";
+    else if(isBank ? (chosen===text) : (chosen===k)) cls+=" wrong";
+  } else if(isBank ? chosen===text : chosen===k){ cls+=" sel"; }
+  return `<button class="${cls}" data-k="${isBank?esc(text):k}" ${done?"disabled":""}>
+    <span class="key">${keys[k]}</span><span>${text}</span></button>`;
+}
+
+function bankOptions(q){
+  // 4 plausible options drawn from the bank, always including the answer
+  const pool = BANK.filter(b=>b!==q.a);
+  const seed = q.gapno;
+  const picks=[]; let n=seed;
+  while(picks.length<3){ n=(n*7+11)%pool.length; if(!picks.includes(pool[n])) picks.push(pool[n]); }
+  const all=[...picks,q.a];
+  // deterministic shuffle
+  return all.sort((a,b)=>((a.charCodeAt(0)*seed)%13)-((b.charCodeAt(0)*seed)%13));
+}
+function bankUsed(word,curIdx){
+  for(let j=44;j<50;j++){ if(j!==curIdx && S.res[j]===true && Q[j].a===word) return true; }
+  return false;
+}
+function summaryHTML(){
+  return SUMMARY.map(p=>{
+    if(p.t) return p.t;
+    const idx = 44 + (p.gap-45);
+    const solved = S.res[idx]===true;
+    return solved
+      ? `<b>${Q[idx].a}</b>`
+      : `<b style="font-family:var(--mono);font-size:.85em">(${p.gap})</b> ______`;
+  }).join("");
+}
+
+function feedbackHTML(i,q){
+  const ok=S.res[i], w=W[q.w], sc=sec(q.s);
+  let right;
+  if(q.tfng) right=TFNG_OPTS[q.a];
+  else if(q.opts) right=q.opts[q.a];
+  else right=q.a;
+  return `<div class="fb ${ok?"":"no"}">
+    <div class="fb-top">
+      <span class="fb-verdict">${ok?"Correct.":"Not this time."}</span>
+      <span class="fb-pts">${ok?"+"+S.given["pts"+i]+" points":"Answer: "+right}</span>
+    </div>
+    <p>${q.why}</p>
+    ${q.listen?`<div class="transcript"><b>Transcript:</b> ${q.audio}</div>`:""}
+    <div class="wordcard">
+      <span class="w">${q.w}</span><span class="pos">${w.pos}</span>
+      <span class="ar">${w.ar}</span>
+      <p class="def">${w.def}</p>
+      <p class="ex">"${w.ex}"</p>
+    </div>
+  </div>`;
+}
+
+function railHTML(){
+  const pct = S.answered? Math.round(S.correct/S.answered*100):0;
+  return `<aside class="rail noprint">
+    <div class="rail-block">
+      <h3>Score</h3>
+      <div class="score-big">${S.correct}<span>/${S.answered||0} answered</span></div>
+      <div style="margin-top:10px">
+        <div class="stat"><span>Points</span><b>${S.points}</b></div>
+        <div class="stat"><span>Streak</span><b>${S.streak}${S.streak>=3?" 🔥":""}</b></div>
+        <div class="stat"><span>Accuracy</span><b>${pct}%</b></div>
+      </div>
+    </div>
+    <div class="rail-block gridblock">
+      <h3>Answer sheet</h3>
+      <div class="grid" id="grid">
+        ${Q.map((q,k)=>{
+          let c="cell";
+          if(k===S.i) c+=" now";
+          if(S.res[k]===true) c+=" ok"; else if(S.res[k]===false) c+=" no";
+          return `<button class="${c}" data-i="${k}" title="Question ${k+1}">${k+1}</button>`;
+        }).join("")}
+      </div>
+    </div>
+    <div class="rail-block">
+      <h3>Badges</h3>
+      ${S.badges.length? `<div class="badges">${S.badges.map(b=>{
+          const bd=BADGES.find(x=>x.id===b); return `<span class="badge">${bd.label}</span>`;
+        }).join("")}</div>` : `<p class="rail-empty">None yet — answer some questions.</p>`}
+    </div>
+  </aside>`;
+}
+
+/* ---------------- Interaction ---------------- */
+function wire(i,q,done){
+  document.querySelectorAll("#grid .cell").forEach(c=>{
+    c.onclick=()=>{ S.i=+c.dataset.i; render(); };
+  });
+  el("prev").onclick=()=>{ if(S.i>0){S.i--;render();} };
+  el("next").onclick=()=>{ if(S.i<49){S.i++;render();} else finish(); };
+  el("save").onclick=saveJSON;
+  el("quit").onclick=()=>{ if(confirm("Finish the quiz now and see your results?")) finish(); };
+
+  if(!done){
+    document.querySelectorAll(".opt").forEach(b=>{
+      b.onclick=()=>{
+        const raw=b.dataset.k;
+        const val = q.bank ? raw : +raw;
+        submit(i,q,val);
+      };
+    });
+    const gi=el("gapin");
+    if(gi){
+      gi.focus();
+      gi.oninput=()=>{ S.given[i]=gi.value; };
+      gi.onkeydown=e=>{ if(e.key==="Enter"){ e.preventDefault(); submit(i,q,gi.value); } };
+      const cb=el("check"); if(cb) cb.onclick=()=>submit(i,q,gi.value);
+    }
+  }
+
+  if(q.listen){
+    const pb=el("play");
+    pb.onclick=()=>speak(q.audio,pb);
+    document.querySelectorAll(".speedbtn").forEach(b=>{
+      b.onclick=()=>{ S.rate=+b.dataset.rate;
+        document.querySelectorAll(".speedbtn").forEach(x=>x.classList.remove("on"));
+        b.classList.add("on"); };
+    });
+  }
+}
+
+function submit(i,q,val){
+  if(S.res[i]!==undefined) return;
+  let ok;
+  if(q.tfng || (q.opts && !q.bank)) ok = (val===q.a);
+  else if(q.bank) ok = (val===q.a);
+  else ok = (q.accept||[q.a]).some(a=>norm(a)===norm(val));
+
+  if(!q.opts && !q.tfng && !q.bank && norm(val)==="") { toast("Type a word first."); return; }
+
+  S.given[i]=val;
+  S.res[i]=ok;
+  S.answered++;
+  if(ok){
+    S.correct++; S.streak++;
+    S.bestStreak=Math.max(S.bestStreak,S.streak);
+    let pts = 2 + (S.streak>=3?1:0) + (S.streak>=6?1:0);
+    S.given["pts"+i]=pts; S.points+=pts;
+  } else { S.streak=0; }
+
+  const before=[...S.badges];
+  BADGES.forEach(b=>{ if(!S.badges.includes(b.id) && b.test(S)) S.badges.push(b.id); });
+  const gained=S.badges.filter(b=>!before.includes(b));
+
+  render();
+  if(gained.length) toast("Badge unlocked: "+BADGES.find(b=>b.id===gained[0]).label);
+  if(S.streak===5) burst(60);
+}
+
+/* ---------------- Speech ---------------- */
+function speak(text,btn){
+  if(!("speechSynthesis" in window)){
+    toast("Your browser cannot play audio. Read the transcript in the feedback instead.");
+    return;
+  }
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.rate=S.rate; u.pitch=1; u.lang="en-GB";
+  const vs=speechSynthesis.getVoices();
+  const v=vs.find(x=>/en-GB/i.test(x.lang)) || vs.find(x=>/en/i.test(x.lang));
+  if(v) u.voice=v;
+  btn.classList.add("playing"); btn.innerHTML="<span>■</span> Playing…";
+  u.onend=()=>{ btn.classList.remove("playing"); btn.innerHTML="<span>▶</span> Play again"; };
+  u.onerror=()=>{ btn.classList.remove("playing"); btn.innerHTML="<span>▶</span> Play audio";
+                  toast("Audio failed. Use the transcript after you answer."); };
+  speechSynthesis.speak(u);
+}
+if("speechSynthesis" in window){ speechSynthesis.onvoiceschanged=()=>{}; }
+
+/* ---------------- Results ---------------- */
+function readiness(pct){
+  if(pct>=92) return {v:"Band 6.5 – 7 range",c:"var(--hl-2)"};
+  if(pct>=80) return {v:"Band 6 range",c:"var(--hl-1)"};
+  if(pct>=66) return {v:"Band 5.5 range",c:"var(--hl-4)"};
+  if(pct>=50) return {v:"Band 5 range",c:"var(--hl-3)"};
+  return {v:"Below Band 5 — revise the list",c:"var(--hl-3)"};
+}
+function finish(){ S.finished=true; S.ended=Date.now(); render(); }
+
+function renderResults(){
+  const pct=Math.round(S.correct/50*100);
+  const r=readiness(pct);
+  const mins=Math.max(1,Math.round(((S.ended||Date.now())-S.started)/60000));
+  const wrong=Q.map((q,i)=>({q,i})).filter(x=>S.res[x.i]===false);
+  const unans=Q.map((q,i)=>i).filter(i=>S.res[i]===undefined);
+  const reviseWords=[...new Set(wrong.map(x=>x.q.w))];
+
+  el("app").innerHTML=`
+  <div class="results">
+    <div class="bigscore">
+      <div class="n">${S.correct}<small>/50</small></div>
+      <div class="meta">
+        ${pct}% correct<br>${S.points} points · best streak ${S.bestStreak}<br>
+        ${mins} minute${mins>1?"s":""}${unans.length?` · ${unans.length} not answered`:""}
+      </div>
+      <div class="readiness" style="background:${r.c}">
+        <div class="lab">Vocabulary readiness</div>
+        <div class="val">${r.v}</div>
+        <div class="cap">Guide only — based on this wordlist, not an official IELTS score.</div>
+      </div>
+    </div>
+
+    <h2 class="sec">by section</h2>
+    ${SECTIONS.map(s=>{
+      const c=secCorrect(S,s.id), t=secTotal(s.id), p=Math.round(c/t*100);
+      return `<div class="bar-row">
+        <span class="bar-name">${s.name}</span>
+        <span class="bar-track"><span class="bar-fill" style="width:${p}%;background:${s.hl}"></span></span>
+        <span class="bar-num">${c}/${t}</span>
+      </div>`;
+    }).join("")}
+
+    ${reviseWords.length?`
+    <h2 class="sec">words to revise</h2>
+    <div class="revise">${reviseWords.map(w=>
+      `<span class="rw">${w}<span class="ar">${W[w].ar}</span></span>`).join("")}</div>`:
+    `<h2 class="sec">words to revise</h2><p class="lede" style="font-size:17px">Nothing — you answered every question correctly. Excellent work.</p>`}
+
+    ${wrong.length?`
+    <h2 class="sec">check your mistakes</h2>
+    ${wrong.map(x=>{
+      let right = x.q.tfng?TFNG_OPTS[x.q.a] : (x.q.opts?x.q.opts[x.q.a]:x.q.a);
+      let mine  = x.q.tfng?TFNG_OPTS[S.given[x.i]] : (x.q.opts&&!x.q.bank?x.q.opts[S.given[x.i]]:S.given[x.i]);
+      let stem;
+      if(x.q.sent) stem = mark(x.q.sent,"#E9E2CF");
+      else if(x.q.listen) stem = x.q.notes.replace("______","<b>______</b>")
+             + ` <span style="color:var(--slate)">— you heard: "${x.q.audio}"</span>`;
+      else if(x.q.bank) stem = gapContext(x.q.gapno);
+      else stem = x.q.prompt;
+      return `<div class="rev-item">
+        <p class="rev-q">Q${x.i+1} · ${sec(x.q.s).name}</p>
+        <p class="rev-p">${stem}</p>
+        <p class="rev-a">You wrote <s>${esc(mine||"—")}</s> · Correct: <b>${esc(right)}</b></p>
+      </div>`;
+    }).join("")}`:""}
+
+    ${pct>=80?certHTML(pct):`
+      <h2 class="sec">certificate</h2>
+      <p class="lede" style="font-size:17px">Reach <b>80%</b> (40 out of 50) to earn your certificate.
+      You are ${40-S.correct} question${40-S.correct===1?"":"s"} away. Revise the words above and try again.</p>`}
+
+    <div class="btnrow noprint" style="margin-top:34px">
+      <button class="btn" id="again">Try again</button>
+      <button class="btn ghost sm" id="save2">Save results (JSON)</button>
+      ${pct>=80?'<button class="btn ghost sm" id="print">Print certificate</button>':""}
+    </div>
+  </div>`;
+
+  el("again").onclick=()=>{ S=newState(S.name); render(); };
+  el("save2").onclick=saveJSON;
+  if(el("print")) el("print").onclick=()=>window.print();
+  if(pct>=80) burst(220);
+}
+
+function gapContext(gapno){
+  const k=SUMMARY.findIndex(p=>p.gap===gapno);
+  const b=((SUMMARY[k-1]||{}).t||"").trim().split(/\s+/).slice(-9).join(" ");
+  const a=((SUMMARY[k+1]||{}).t||"").trim().split(/\s+/).slice(0,9).join(" ");
+  return `&hellip;${b} <b>______</b> ${a}&hellip;`;
+}
+function certHTML(pct){
+  const d=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+  return `<h2 class="sec noprint">certificate</h2>
+  <div class="cert">
+    <div class="k">Certificate of Achievement</div>
+    <div class="who">${esc(S.name||"Student")}</div>
+    <div class="what">has successfully completed the B1+ Vocabulary List 1 (Fall) &ldquo;Education&rdquo;
+    quiz — 50 IELTS-style questions across reading and listening formats.</div>
+    <div class="sc">${S.correct}/50 &middot; ${pct}%</div>
+    <div class="k" style="margin-top:8px">${readiness(pct).v}</div>
+    <div class="sig">${d} &nbsp;·&nbsp; Higher Colleges of Technology &nbsp;·&nbsp; Designed by: Nazila Motahari</div>
+  </div>`;
+}
+
+/* ---------------- Save / load (JSON file) ---------------- */
+function saveJSON(){
+  const data={app:"B1+ Wordlist 1 Education Quiz",version:1,saved:new Date().toISOString(),state:S};
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download=`wordlist1-${(S.name||"student").replace(/\s+/g,"-").toLowerCase()}.json`;
+  a.click(); URL.revokeObjectURL(a.href);
+  toast("Progress saved to your downloads folder.");
+}
+el("loadfile").addEventListener("change",e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const rd=new FileReader();
+  rd.onload=()=>{
+    try{
+      const d=JSON.parse(rd.result);
+      if(!d.state||typeof d.state.i!=="number") throw 0;
+      S=d.state; shuffleQuestions(S.qorder||null); shuffleOptions(S.order||null); render();
+      toast("Progress loaded. Continue where you stopped.");
+    }catch(err){ toast("That file could not be read. Choose a saved quiz file."); }
+  };
+  rd.readAsText(f); e.target.value="";
+});
+
+/* ---------------- Confetti ---------------- */
+const cv=el("confetti"), cx=cv.getContext("2d");
+let parts=[],raf=null;
+function sizeC(){ cv.width=innerWidth; cv.height=innerHeight; }
+addEventListener("resize",sizeC); sizeC();
+function burst(n){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cols=["#E8B52E","#A8C98A","#F0A3A0","#F2C98A","#C8B6E0","#9FC6DE","#332B1E"];
+  for(let i=0;i<n;i++){
+    parts.push({x:innerWidth/2+(Math.random()-.5)*260, y:innerHeight*0.32,
+      vx:(Math.random()-.5)*11, vy:Math.random()*-13-4,
+      w:5+Math.random()*7, h:8+Math.random()*10,
+      c:cols[i%cols.length], r:Math.random()*6, vr:(Math.random()-.5)*.35, life:150});
+  }
+  if(!raf) tick();
+}
+function tick(){
+  cx.clearRect(0,0,cv.width,cv.height);
+  parts=parts.filter(p=>p.life>0 && p.y<cv.height+40);
+  parts.forEach(p=>{
+    p.vy+=0.32; p.x+=p.vx; p.y+=p.vy; p.r+=p.vr; p.life--;
+    cx.save(); cx.translate(p.x,p.y); cx.rotate(p.r);
+    cx.fillStyle=p.c; cx.fillRect(-p.w/2,-p.h/2,p.w,p.h); cx.restore();
+  });
+  raf = parts.length? requestAnimationFrame(tick) : (cx.clearRect(0,0,cv.width,cv.height),null);
+}
+
+/* ---------------- Keyboard ---------------- */
+addEventListener("keydown",e=>{
+  if(!S||S.finished) return;
+  if(e.target.tagName==="INPUT") return;
+  if(e.key==="ArrowRight"&&S.i<49){S.i++;render();}
+  if(e.key==="ArrowLeft"&&S.i>0){S.i--;render();}
+  const q=Q[S.i];
+  if(S.res[S.i]===undefined && /^[1-4]$/.test(e.key)){
+    const btns=document.querySelectorAll(".opt");
+    const b=btns[+e.key-1]; if(b) b.click();
+  }
+});
+
+/* ---------------- Go ---------------- */
+renderStart();
+
+</script>
+</body>
+</html>
